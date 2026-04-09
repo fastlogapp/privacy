@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastLog — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --teal: #1D9E75;
+  --teal-light: #E1F5EE;
+  --teal-dark: #0F6E56;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --border: #e4e4e0;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.75;
+  padding: 0 16px 80px;
+}
+header {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 52px 0 36px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+.logo-icon {
+  width: 42px; height: 42px;
+  background: var(--teal);
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-icon svg { width: 22px; height: 22px; stroke: white; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.logo-name { font-family: 'DM Serif Display', serif; font-size: 21px; color: var(--teal-dark); }
+h1 { font-family: 'DM Serif Display', serif; font-size: 32px; font-weight: 400; color: var(--text); margin-bottom: 10px; }
+.meta { font-size: 13px; color: #999; }
+main { max-width: 700px; margin: 0 auto; }
+.lang-bar { display: flex; gap: 8px; margin-bottom: 36px; flex-wrap: wrap; }
+.lb {
+  padding: 5px 15px; border-radius: 20px;
+  border: 1.5px solid var(--border); background: var(--card);
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--muted); cursor: pointer; transition: all 0.18s;
+}
+.lb.active, .lb:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--teal-light); }
+.lc { display: none; }
+.lc.active { display: block; }
+.disclaimer {
+  background: #fff8e1;
+  border: 1.5px solid #f0c040;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #5a4500;
+  line-height: 1.6;
+}
+.disclaimer strong { display: block; margin-bottom: 4px; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 14px;
+}
+.card h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px; font-weight: 400;
+  color: var(--teal-dark);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 10px;
+}
+.card h2 .n {
+  width: 26px; height: 26px;
+  background: var(--teal-light);
+  border-radius: 50%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 500;
+  color: var(--teal-dark);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.card p { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+.card p:last-child { margin-bottom: 0; }
+.card ul { list-style: none; margin: 8px 0; }
+.card ul li { font-size: 14px; color: var(--muted); padding: 3px 0 3px 18px; position: relative; }
+.card ul li::before { content: '·'; position: absolute; left: 5px; color: var(--teal); font-weight: 700; font-size: 18px; line-height: 1.2; }
+.card a { color: var(--teal-dark); }
+.cta {
+  background: var(--teal-dark);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-top: 28px;
+  color: white;
+}
+.cta h2 { font-family: 'DM Serif Display', serif; font-size: 18px; font-weight: 400; margin-bottom: 8px; }
+.cta p { font-size: 14px; opacity: 0.85; }
+.cta a { color: #9FE1CB; text-decoration: none; font-weight: 500; }
+footer { max-width: 700px; margin: 40px auto 0; text-align: center; font-size: 12px; color: #bbb; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 16 14"/></svg>
+    </div>
+    <span class="logo-name">FastLog</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated / Ultimo aggiornamento: April 2026</p>
+</header>
+
+<main>
+  <div class="lang-bar">
+    <button class="lb active" onclick="setLang('it', this)">🇮🇹 Italiano</button>
+    <button class="lb" onclick="setLang('en', this)">🇬🇧 English</button>
+    <button class="lb" onclick="setLang('es', this)">🇪🇸 Español</button>
+    <button class="lb" onclick="setLang('de', this)">🇩🇪 Deutsch</button>
+  </div>
+
+  <!-- ===== ITALIANO ===== -->
+  <div class="lc active" id="lc-it">
+    <div class="disclaimer">
+      <strong>⚠️ Avviso importante</strong>
+      FastLog non è un dispositivo medico e non diagnostica, tratta, cura o previene alcuna malattia o condizione medica. Le informazioni fornite dall'app sono solo a scopo di monitoraggio personale. Consulta sempre un professionista sanitario per consigli medici, diagnosi o trattamenti.
+    </div>
+    <div class="card"><h2><span class="n">1</span>Introduzione</h2>
+      <p>FastLog ("l'App") è sviluppata da uno sviluppatore indipendente ("noi"). Questa Informativa spiega quali dati l'App raccoglie, come vengono utilizzati e i tuoi diritti.</p>
+    </div>
+    <div class="card"><h2><span class="n">2</span>Dati che raccogliamo</h2>
+      <p>L'App può raccogliere i seguenti dati personali e sanitari che inserisci volontariamente:</p>
+      <ul>
+        <li>Misurazioni del peso corporeo</li>
+        <li>Misure corporee (vita, fianchi, torace, braccia, cosce, collo)</li>
+        <li>Registro pasti e calorie</li>
+        <li>Sessioni di digiuno intermittente</li>
+        <li>Livelli di umore ed energia</li>
+        <li>Informazioni profilo (nome, altezza, sesso, data di nascita)</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">3</span>Dove sono conservati i dati</h2>
+      <p>Tutti i dati che inserisci sono conservati <strong>esclusivamente sul tuo dispositivo</strong> tramite un database locale (SQLite via Room). Non raccogliamo, trasmettiamo né conserviamo dati personali su server esterni.</p>
+    </div>
+    <div class="card"><h2><span class="n">4</span>Servizi di terze parti</h2>
+      <p>Se scegli di utilizzare la funzione di analisi nutrizionale AI (Pasti &amp; Calorie), l'App invia la descrizione testuale del pasto all'API Google Gemini. Il testo viene elaborato da Google secondo la loro informativa: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>La chiave API Gemini è conservata localmente sul tuo dispositivo e non viene mai condivisa con noi.</p>
+    </div>
+    <div class="card"><h2><span class="n">5</span>Esportazione dati</h2>
+      <p>L'App ti consente di esportare i dati come file JSON per il backup. Il file viene salvato localmente sul tuo dispositivo. Dati sensibili (chiavi API, impostazioni biometriche) sono esclusi dall'esportazione.</p>
+    </div>
+    <div class="card"><h2><span class="n">6</span>Permessi</h2>
+      <ul>
+        <li>Notifiche: per inviare promemoria (peso, digiuno, umore, misure)</li>
+        <li>Autenticazione biometrica: opzionale, per proteggere l'accesso all'App</li>
+        <li>Servizio in foreground: per eseguire il timer del digiuno</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">7</span>I tuoi diritti (GDPR)</h2>
+      <p>Puoi eliminare tutti i tuoi dati in qualsiasi momento da Impostazioni &gt; Privacy &gt; Elimina tutti i dati. La disinstallazione dell'App rimuove permanentemente tutti i dati conservati localmente.</p>
+    </div>
+    <div class="card"><h2><span class="n">8</span>Minori</h2>
+      <p>L'App non è destinata a bambini di età inferiore a 13 anni.</p>
+    </div>
+    <div class="cta"><h2>Contatti</h2>
+      <p>Per qualsiasi domanda relativa a questa Informativa:<br><a href="mailto:fastlog.support@gmail.com">fastlog.support@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ===== ENGLISH ===== -->
+  <div class="lc" id="lc-en">
+    <div class="disclaimer">
+      <strong>⚠️ Important notice</strong>
+      FastLog is not a medical device and does not diagnose, treat, cure, or prevent any disease or medical condition. Information provided by the app is for personal tracking purposes only. Always consult a healthcare professional for medical advice, diagnosis, or treatment.
+    </div>
+    <div class="card"><h2><span class="n">1</span>Introduction</h2>
+      <p>FastLog ("the App") is developed by an independent developer ("we", "us"). This Privacy Policy explains what data the App collects, how it is used, and your rights as a user.</p>
+    </div>
+    <div class="card"><h2><span class="n">2</span>Data we collect</h2>
+      <ul>
+        <li>Body weight measurements</li>
+        <li>Body measurements (waist, hips, chest, arms, thighs, neck)</li>
+        <li>Meal and calorie logs</li>
+        <li>Intermittent fasting sessions</li>
+        <li>Mood and energy levels</li>
+        <li>Profile information (name, height, gender, date of birth)</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">3</span>Where data is stored</h2>
+      <p>All data you enter is stored <strong>exclusively on your device</strong> using a local database (SQLite via Room). We do not collect, transmit, or store any personal data on external servers.</p>
+    </div>
+    <div class="card"><h2><span class="n">4</span>Third-party services</h2>
+      <p>If you choose to use the AI nutritional analysis feature (Meals &amp; Calories), the App sends the text description of your meal to the Google Gemini API, processed by Google according to: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>The Gemini API key is stored locally on your device and is never shared with us.</p>
+    </div>
+    <div class="card"><h2><span class="n">5</span>Data export</h2>
+      <p>The App allows you to export your data as a JSON file for backup purposes. Sensitive data (API keys, biometric settings) are excluded from the export.</p>
+    </div>
+    <div class="card"><h2><span class="n">6</span>Permissions</h2>
+      <ul>
+        <li>Notifications: to send reminders (weight, fasting, mood, measurements)</li>
+        <li>Biometric authentication: optional, to protect access to the App</li>
+        <li>Foreground service: to run the fasting timer</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">7</span>Your rights (GDPR)</h2>
+      <p>You can delete all your data at any time from Settings &gt; Privacy &gt; Delete all data. Uninstalling the App permanently removes all locally stored data.</p>
+    </div>
+    <div class="card"><h2><span class="n">8</span>Children</h2>
+      <p>The App is not directed at children under 13 years of age.</p>
+    </div>
+    <div class="cta"><h2>Contact</h2>
+      <p>For any questions regarding this Privacy Policy:<br><a href="mailto:fastlog.support@gmail.com">fastlog.support@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ===== ESPAÑOL ===== -->
+  <div class="lc" id="lc-es">
+    <div class="disclaimer">
+      <strong>⚠️ Aviso importante</strong>
+      FastLog no es un dispositivo médico y no diagnostica, trata, cura ni previene ninguna enfermedad o condición médica. La información proporcionada por la app es solo para seguimiento personal. Consulta siempre a un profesional de la salud para obtener asesoramiento médico, diagnóstico o tratamiento.
+    </div>
+    <div class="card"><h2><span class="n">1</span>Introducción</h2>
+      <p>FastLog ("la App") es desarrollada por un desarrollador independiente. Esta Política explica qué datos recopila la App, cómo se utilizan y tus derechos.</p>
+    </div>
+    <div class="card"><h2><span class="n">2</span>Datos que recopilamos</h2>
+      <ul>
+        <li>Mediciones de peso corporal</li>
+        <li>Medidas corporales (cintura, caderas, pecho, brazos, muslos, cuello)</li>
+        <li>Registro de comidas y calorías</li>
+        <li>Sesiones de ayuno intermitente</li>
+        <li>Niveles de estado de ánimo y energía</li>
+        <li>Información de perfil (nombre, altura, género, fecha de nacimiento)</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">3</span>Dónde se almacenan los datos</h2>
+      <p>Todos los datos se almacenan <strong>exclusivamente en tu dispositivo</strong> mediante una base de datos local (SQLite a través de Room). No recopilamos ni transmitimos datos personales a servidores externos.</p>
+    </div>
+    <div class="card"><h2><span class="n">4</span>Servicios de terceros</h2>
+      <p>Si usas la función de análisis nutricional con IA, la App envía la descripción de tu comida a la API de Google Gemini, procesada según: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+    </div>
+    <div class="card"><h2><span class="n">5</span>Exportación de datos</h2>
+      <p>Puedes exportar tus datos como archivo JSON. Los datos sensibles (claves de API, configuración biométrica) están excluidos.</p>
+    </div>
+    <div class="card"><h2><span class="n">6</span>Permisos</h2>
+      <ul>
+        <li>Notificaciones: para recordatorios</li>
+        <li>Autenticación biométrica: opcional</li>
+        <li>Servicio en primer plano: para el temporizador de ayuno</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">7</span>Tus derechos (GDPR)</h2>
+      <p>Puedes eliminar todos tus datos desde Ajustes &gt; Privacidad &gt; Eliminar todos los datos.</p>
+    </div>
+    <div class="card"><h2><span class="n">8</span>Menores</h2>
+      <p>La App no está dirigida a menores de 13 años.</p>
+    </div>
+    <div class="cta"><h2>Contacto</h2>
+      <p><a href="mailto:fastlog.support@gmail.com">fastlog.support@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ===== DEUTSCH ===== -->
+  <div class="lc" id="lc-de">
+    <div class="disclaimer">
+      <strong>⚠️ Wichtiger Hinweis</strong>
+      FastLog ist kein Medizinprodukt und diagnostiziert, behandelt, heilt oder verhindert keine Krankheiten oder medizinischen Zustände. Die App dient ausschließlich zur persönlichen Nachverfolgung. Wenden Sie sich stets an einen Arzt für medizinischen Rat, Diagnose oder Behandlung.
+    </div>
+    <div class="card"><h2><span class="n">1</span>Einführung</h2>
+      <p>FastLog ("die App") wird von einem unabhängigen Entwickler entwickelt. Diese Datenschutzrichtlinie erklärt, welche Daten erfasst werden und welche Rechte Sie haben.</p>
+    </div>
+    <div class="card"><h2><span class="n">2</span>Erfasste Daten</h2>
+      <ul>
+        <li>Körpergewichtsmessungen</li>
+        <li>Körpermaße (Taille, Hüften, Brust, Arme, Oberschenkel, Hals)</li>
+        <li>Mahlzeiten- und Kalorienprotokoll</li>
+        <li>Intervallfasten-Sitzungen</li>
+        <li>Stimmungs- und Energieniveaus</li>
+        <li>Profilinformationen (Name, Größe, Geschlecht, Geburtsdatum)</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">3</span>Datenspeicherung</h2>
+      <p>Alle Daten werden <strong>ausschließlich auf Ihrem Gerät</strong> in einer lokalen Datenbank (SQLite über Room) gespeichert. Wir erfassen oder übertragen keine Daten an externe Server.</p>
+    </div>
+    <div class="card"><h2><span class="n">4</span>Drittanbieter</h2>
+      <p>Bei Nutzung der KI-Ernährungsanalyse wird die Mahlzeitenbeschreibung an die Google Gemini API gesendet, verarbeitet gemäß: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+    </div>
+    <div class="card"><h2><span class="n">5</span>Datenexport</h2>
+      <p>Sie können Ihre Daten als JSON-Datei exportieren. Sensible Daten (API-Schlüssel, biometrische Einstellungen) sind ausgeschlossen.</p>
+    </div>
+    <div class="card"><h2><span class="n">6</span>Berechtigungen</h2>
+      <ul>
+        <li>Benachrichtigungen: für Erinnerungen</li>
+        <li>Biometrische Authentifizierung: optional</li>
+        <li>Vordergrunddienst: für den Fastentimer</li>
+      </ul>
+    </div>
+    <div class="card"><h2><span class="n">7</span>Ihre Rechte (DSGVO)</h2>
+      <p>Sie können alle Daten unter Einstellungen &gt; Datenschutz &gt; Alle Daten löschen entfernen.</p>
+    </div>
+    <div class="card"><h2><span class="n">8</span>Kinder</h2>
+      <p>Die App richtet sich nicht an Kinder unter 13 Jahren.</p>
+    </div>
+    <div class="cta"><h2>Kontakt</h2>
+      <p><a href="mailto:fastlog.support@gmail.com">fastlog.support@gmail.com</a></p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 FastLog · Independent developer · <a href="mailto:fastlog.support@gmail.com" style="color:#bbb">fastlog.support@gmail.com</a></p>
+</footer>
+
+<script>
+function setLang(l, btn) {
+  document.querySelectorAll('.lc').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lb').forEach(el => el.classList.remove('active'));
+  document.getElementById('lc-' + l).classList.add('active');
+  btn.classList.add('active');
+  document.documentElement.lang = l;
+}
+</script>
+</body>
+</html>
